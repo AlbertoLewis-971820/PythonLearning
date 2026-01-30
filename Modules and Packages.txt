@@ -1,0 +1,45 @@
+- **Modules**: A module is a single file containing Python code, such as functions, classes, and variables. It allows code organization and reuse.
+  - Modules are imported using the `import` statement (e.g., `import math`).
+    - **Example**: `import math; print(math.sqrt(16))`  # Outputs: 4.0
+  - You can create custom modules by saving Python code in a .py file and importing it.
+    - **Example**: Create `mymodule.py` with `def greet(name): return f"Hello, {name}!"`, then in another file: `import mymodule; print(mymodule.greet("Alice"))`
+  - The `__name__` attribute is set to the module's name when imported, or "__main__" if run directly.
+    - **Example**: In `mymodule.py`, add `if __name__ == "__main__": print("Running directly")`
+  - Standard library includes many built-in modules like `os`, `sys`, `datetime`.
+    - **Example**: `import os; print(os.getcwd())`  # Prints current working directory
+
+- **Packages**: A package is a directory that contains multiple modules and subpackages, organized hierarchically.
+  - To be a package, the directory must contain an `__init__.py` file (can be empty).
+  - Packages allow for better code organization, especially in large projects.
+  - Imported using dot notation (e.g., `import package.module` or `from package import module`).
+    - **Example**: `mypackage/__init__.py` (empty), `mypackage/utils.py` with functions, then `import mypackage.utils; mypackage.utils.some_function()`
+  - Subpackages can be nested within packages for deeper organization.
+    - **Example**: `mypackage/subpackage/module.py`, import as `from mypackage.subpackage import module`
+
+- **Importing**:
+  - `import module`: Imports the entire module.
+    - **Example**: `import math; result = math.factorial(5)`
+  - `from module import item`: Imports specific items from a module.
+    - **Example**: `from math import sqrt; print(sqrt(25))`  # Outputs: 5.0
+  - `import module as alias`: Imports with an alias for convenience.
+    - **Example**: `import numpy as np; arr = np.array([1, 2, 3])`
+  - `from package import *`: Imports all public items from a package (use cautiously).
+    - **Example**: `from math import *; print(pi)`  # Avoid in production code
+
+- **Creating Custom Modules and Packages**:
+  - Save code in a .py file for a module.
+    - **Example**: `calculator.py` with `def add(a, b): return a + b`
+  - Create a directory with __init__.py for a package, and add module files inside.
+    - **Example**: Directory `mytools/` with `__init__.py`, `strings.py`, `numbers.py`
+  - Use relative imports within packages (e.g., `from .module import function`).
+    - **Example**: In `mytools/strings.py`: `from .numbers import multiply`
+
+- **Best Practices**:
+  - Use descriptive names for modules and packages.
+    - **Example**: `data_processing.py` instead of `dp.py`
+  - Avoid circular imports.
+    - **Example**: Don't have module A import B and B import A
+  - Organize related functionality into modules and packages.
+    - **Example**: Group all database functions in `database/` package
+  - Document modules with docstrings.
+    - **Example**: At top of module: `"""This module handles file operations."""`
