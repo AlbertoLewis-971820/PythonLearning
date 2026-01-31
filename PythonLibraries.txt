@@ -1,0 +1,29 @@
+- **NumPy**: A fundamental library for numerical computing in Python, providing support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on these arrays efficiently.
+
+- **Pandas**: A powerful data manipulation and analysis library that offers data structures like DataFrames and Series, making it easy to handle, clean, and analyze structured data from various sources.
+
+- **Matplotlib**: A comprehensive plotting library for creating static, animated, and interactive visualizations in Python, widely used for data visualization and graphical representation of data.
+
+- **Scikit-learn**: A machine learning library built on NumPy, SciPy, and Matplotlib, providing simple and efficient tools for data mining, data analysis, and machine learning algorithms including classification, regression, and clustering.
+
+- **TensorFlow**: An open-source machine learning framework developed by Google for building and training deep neural networks, supporting both research and production use cases.
+
+- **Django**: A high-level web framework for Python that encourages rapid development and clean, pragmatic design, ideal for building complex web applications with built-in features like authentication and admin interfaces.
+
+- **Flask**: A lightweight and flexible web framework for Python, designed for building small to medium-sized web applications and APIs with minimal overhead and easy extensibility.
+
+- **Requests**: A simple and elegant HTTP library for Python, making it easy to send HTTP requests and handle responses, commonly used for interacting with web APIs and services.
+
+- **BeautifulSoup**: A library for parsing HTML and XML documents, providing Pythonic idioms for iterating, searching, and modifying the parse tree, essential for web scraping and data extraction from web pages.
+
+- **Pytest**: A mature testing framework for Python that supports simple unit tests as well as complex functional testing, with features like fixtures, parametrization, and plugins for extensive customization.
+
+- **Pillow**: An image processing library that provides extensive file format support and powerful image processing capabilities, including opening, manipulating, and saving images in various formats.
+
+- **SQLAlchemy**: A SQL toolkit and Object-Relational Mapping (ORM) library for Python, offering a full suite of well-known enterprise-level persistence patterns and designed for efficient and high-performing database access.
+
+- **FastAPI**: A modern, fast web framework for building APIs with Python 3.7+ based on standard Python type hints, featuring automatic API documentation generation and high performance.
+
+- **Jupyter**: An open-source project providing interactive computing environments like Jupyter Notebook and JupyterLab, allowing users to create and share documents containing live code, equations, visualizations, and narrative text.
+
+- **Virtualenv**: A tool for creating isolated Python environments, allowing developers to manage project-specific dependencies and avoid conflicts between different projects' requirements.
